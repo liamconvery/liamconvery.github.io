@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2023-24 Confidence Bowl</title>
+    <!-- You can include CSS links and other metadata here -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>2023-24 Confidence Bowl</h1>
+        <img src="logo.png" alt="My Logo">
+    </header>
 
+    <!-- The rest of your web page content goes here -->
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select a Number</title>
+</head>
+<body>
+    <label for="numberSelect">Select a number from 1 to 15:</label>
+    <select id="numberSelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+    </select>
+
+    <p>Selected Number: <span id="selectedNumber"></span></p>
+
+    <script>
+        // JavaScript to display the selected number
+        const numberSelect = document.getElementById("numberSelect");
+        const selectedNumber = document.getElementById("selectedNumber");
+
+        numberSelect.addEventListener("change", function() {
+            const selectedValue = numberSelect.value;
+            selectedNumber.textContent = selectedValue;
+        });
+    </script>
+</body>
+</html>
